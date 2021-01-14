@@ -1,0 +1,16 @@
+.chessboard {
+    width: 400px;
+    background-color: burlywood;
+    border: 10px solid darkgray;
+}
+.chessboard div {
+    display: flex;
+}
+.chessboard div span {
+    width: 100px;
+    height: 100px;
+}
+.chessboard div:nth-child(odd) span:nth-child(even),
+.chessboard div:nth-child(even) span:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
