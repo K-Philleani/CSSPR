@@ -1,0 +1,47 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #cccccc;
+    margin: 20px;
+}
+.demo-1 {
+    transition: transform 1s ease;
+    width: 100px;
+}
+.demo-1:hover {
+    transform: rotate(360deg);
+}
+
+.demo-2 {
+
+}
+.demo-2:hover {
+    animation: move 2s linear 2 alternate running;
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(200px);
+    }
+}
+.demo-3 {
+    border-radius: 50%;
+    margin-top: 400px;
+}
+.demo-3:hover {
+    animation: jump 2s ease-in infinite;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(200px);
+    }
+    50% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
