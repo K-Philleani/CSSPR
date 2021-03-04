@@ -1,0 +1,25 @@
+/*
+方法二:
+    flex
+*/
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.box {
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid lightblue;
+    background-color: lightcyan;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

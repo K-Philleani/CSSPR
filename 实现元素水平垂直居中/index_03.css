@@ -1,0 +1,31 @@
+/*
+方法三:
+    table-cell
+ */
+
+body {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid #cccccc;
+}
+.box {
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid lightblue;
+    background-color: lightcyan;
+}
+
+body {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box {
+    display: inline-block;
+}

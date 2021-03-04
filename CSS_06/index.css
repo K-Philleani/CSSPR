@@ -29,19 +29,24 @@
     margin-top: 400px;
 }
 .demo-3:hover {
-    animation: jump 2s ease-in infinite;
+    animation: jump 2s cubic-bezier(0.41, -0.04, 0.93, 0.29) infinite alternate;
 }
 @keyframes jump {
     0% {
         transform: translateY(0);
     }
-    40% {
+    /*40% {*/
+    /*    transform: translateY(200px);*/
+    /*}*/
+    /*50% {*/
+    /*    transform: translateY(200px);*/
+    /*}*/
+    90% {
         transform: translateY(200px);
-    }
-    50% {
-        transform: translateY(200px);
+        clip-path: ellipse(50% 50% at 50% 50%);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(210px);
+        clip-path: ellipse(50% 45% at 50% 48%);
     }
 }
